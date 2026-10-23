@@ -317,7 +317,7 @@ server <- function(input, output, session) {
         clusterOptions = markerClusterOptions()
       ) |>
       addTiles(group = "Neighbourhood") |>  
-      addProviderTiles(providers$CartoDB.VoyagerLabelsUnder,
+      addProviderTiles(providers$Esri.WorldStreetMap,
                        group = "Basemap") |> 
       addProviderTiles(providers$Esri.WorldImagery,
                        group = "Satellite") |>
